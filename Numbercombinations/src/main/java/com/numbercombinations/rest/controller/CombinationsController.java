@@ -27,7 +27,7 @@ public class CombinationsController {
 	@Autowired
     private ICombinationsService combinationsService;
 	
-	@RequestMapping(value = "/getCombinations", method = RequestMethod.GET,consumes = "application/json", produces = "application/json")
+	@RequestMapping(value = "/getCombinations", method = RequestMethod.GET,produces = "application/json")
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
     public ResponseDTO getCombinations(HttpServletRequest request, HttpServletResponse response,
